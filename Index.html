@@ -42,7 +42,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[22.202695243331316,84.00354083489151],[22.21805775589898,84.0337607097103]]);
+        }).fitBounds([[22.203571827704135,84.003095114024],[22.218934340271797,84.03331498884279]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -99,13 +99,13 @@
             return {
                 pane: 'pane_Rajpur1_1',
                 opacity: 1,
-                color: 'rgba(255,37,77,1.0)',
+                color: 'rgba(255,42,67,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
                 weight: 3.0, 
                 fillOpacity: 0,
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_Rajpur1_1');
@@ -113,7 +113,7 @@
         map.getPane('pane_Rajpur1_1').style['mix-blend-mode'] = 'normal';
         var layer_Rajpur1_1 = new L.geoJson(json_Rajpur1_1, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_Rajpur1_1',
             layerName: 'layer_Rajpur1_1',
             pane: 'pane_Rajpur1_1',
@@ -152,7 +152,7 @@
             return {
                 pane: 'pane_Canopy_2',
                 opacity: 1,
-                color: 'rgba(41,41,247,1.0)',
+                color: 'rgba(86,128,255,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
@@ -217,7 +217,7 @@
                 weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(188,251,61,1.0)',
+                fillColor: 'rgba(85,255,96,1.0)',
                 interactive: true,
             }
         }
@@ -283,7 +283,7 @@
                 weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(104,248,246,1.0)',
+                fillColor: 'rgba(106,251,255,1.0)',
                 interactive: true,
             }
         }
